@@ -1,0 +1,17 @@
+model:
+  backbone: timm_tf_efficientnet_b5.ns_jft_in1k
+  num_classes:
+  top_k_checkpoints: 3
+
+train:
+  amp: True # set this to True, if your GPU supports FP16. 2080Ti - okay, 1080Ti - not okay
+  stage: first
+
+dataloaders:
+  train_batch_size: 100 # 100 ~~ 70GB GPU memory 
+  valid_batch_size: 100
+  num_workers: 4 # adjust this depending on your CPU cores
+
+img_size: 336
+
+

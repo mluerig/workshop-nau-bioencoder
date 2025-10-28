@@ -1,0 +1,15 @@
+## install with `mamba env create -f environment.yml`
+name: bioencoder-env
+dependencies:
+  - python=3.11
+  - nvidia::cuda-toolkit==12.6.*
+  - pip 
+  - pip:
+    - bioencoder
+
+## note: on some system the correct torch version may not be automatically selected. 
+## In that case, install torch and torchvision manually after creating the environment 
+## Go to https://pytorch.org/get-started/locally/ and copy the command for your system configuration
+## e.g. for CUDA 12.6: pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+
+

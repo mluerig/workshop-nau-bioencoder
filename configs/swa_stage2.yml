@@ -1,0 +1,15 @@
+model:
+  backbone: timm_tf_efficientnet_b5.ns_jft_in1k # Model architecture and pre-trained weights to use
+  top_k_checkpoints: 3 # Number of best model checkpoints to save based on validation metric
+  num_classes: 12 # Number of output classes for classification
+
+train:
+  amp: True # Enable Automatic Mixed Precision (AMP) for faster training on compatible GPUs
+  stage: second # Training stage: 'first' for SupCon, 'second' for fine-tuning classification
+
+dataloaders:
+  train_batch_size: 100 # 100 ~~ 70GB GPU memory 
+  valid_batch_size: 100
+  num_workers: 4 # adjust this depending on your CPU cores
+
+img_size: 336

@@ -1,0 +1,43 @@
+# ==============================
+# Python and ML workshop repo
+# ==============================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments and Python runtime
+.venv/
+venv/
+env/
+.env
+.env.*
+.python-version
+.tox/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Training outputs and logs
+bioencoder_wd/
+
+# Local data (keep folder, ignore contents by default)
+data_raw/**
+!data_raw/.gitkeep
+!data_raw/README.md
+
+# Logs and temp
+*.log
+*.tmp
+*.temp
