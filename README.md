@@ -1,4 +1,4 @@
-# BioEncoder workshop at Norther Arizona University
+# BioEncoder workshop at Northern Arizona University
 
 <div align="center">
     <img src="assets/banner.jpg" width="50%">
