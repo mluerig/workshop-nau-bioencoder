@@ -28,7 +28,7 @@ Make sure that mamba is installed and initialized. On monsoon the command is `mo
 mamba env create -f environment.yml
 ````
 
-3\. Get the [dataset from the file hoster](https://www.dropbox.com/scl/fi/ikwnxypf673up5jdelzzr/junonia_dorsal.zip?rlkey=mo8l6d90x5vk3x8qkek7az442&st=44u4d5v7&dl=0). Unzip and place the folder in `data_raw`.
+3\. Get the [dataset from the file hoster](https://www.dropbox.com/scl/fi/mxr6606ei5m88piwrtd19/junonia.zip?rlkey=1gzhckdxt9640zac6014gaifh&st=y9vn8iok&dl=0). Unzip and place the folder in `data_raw`.
 
 4\. Activate the environment, and run the notebook - either in vscode or jupyter notebook / lab:
 

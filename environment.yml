@@ -6,6 +6,7 @@ dependencies:
   - pip 
   - pip:
     - bioencoder
+    - ipykernel
 
 ## note: on some system the correct torch version may not be automatically selected. 
 ## In that case, install torch and torchvision manually after creating the environment 

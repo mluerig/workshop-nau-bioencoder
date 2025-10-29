@@ -2,13 +2,16 @@ model:
   backbone: timm_tf_efficientnet_b5.ns_jft_in1k
   num_classes:
   stage: 'first'
-  checkpoint: epoch1
+  checkpoint: swa
+  precision: True ## will enable full precision (needed for reproducibility); but slows down plotting 
 
 dataloaders:
-  train_batch_size: 2
-  valid_batch_size: 2
+  train_batch_size: 
+  valid_batch_size: 50
   num_workers: 4 
 
 img_size: 336
 
 plot_style: 2
+
+return_results: True
