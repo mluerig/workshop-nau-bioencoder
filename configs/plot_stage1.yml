@@ -3,14 +3,13 @@ model:
   num_classes:
   stage: 'first'
   checkpoint: swa
-  precision: True ## will enable full precision (needed for reproducibility); but slows down plotting 
 
 dataloaders:
-  train_batch_size: 
-  valid_batch_size: 50
+  train_batch_size: 120
+  valid_batch_size: 120
   num_workers: 4 
 
-img_size: 336
+img_size: 128
 
 plot_style: 2
 

@@ -3,9 +3,9 @@ model:
   num_classes: 12 # Number of output classes for classification
 
 dataloaders:
-  train_batch_size: 100 # 100 ~~ 70GB GPU memory 
-  valid_batch_size: 100
-  num_workers: 4 # adjust this depending on your CPU cores
+  train_batch_size: 120
+  valid_batch_size: 120
+  num_workers: 4 
 
 optimizer:
   name: SGD # Optimizer type
