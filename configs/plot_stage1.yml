@@ -5,7 +5,7 @@ model:
   checkpoint: swa
 
 dataloaders:
-  train_batch_size: 120
+  train_batch_size: 
   valid_batch_size: 120
   num_workers: 4 
 
